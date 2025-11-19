@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Povos Indígenas do Brasil</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #2d2d2d;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      z-index: 1000;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      background: #4a2c2a;
+      color: white;
+      text-align: center;
+      padding: 80px 20px 40px;
+      margin-top: 50px;
+    }
+
+    /* Parallax */
+    .parallax {
+      background-image: url('https://picsum.photos/id/1011/1200/800');
+      height: 400px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* Conteúdo */
+    .content {
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* Tabela */
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #333;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: #4a2c2a;
+      color: white;
+    }
+
+    /* Galeria */
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+    .gallery img {
+      width: 250px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    /* Footer */
+    footer {
+      background: #2d2d2d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#home">Início</a>
+    <a href="#historia">História</a>
+    <a href="#tabela">Dados</a>
+    <a href="#galeria">Imagens</a>
+    <a href="#contato">Contato</a>
+  </div>
+
+  <!-- Header -->
+  <header id="home">
+    <h1>Povos Indígenas do Brasil</h1>
+    <p>Guardadores da terra, da memória e da cultura</p>
+  </header>
+
+  <!-- Parallax -->
+  <div class="parallax"></div>
+
+  <!-- História -->
+  <div class="content" id="historia">
+    <h2>História e Resistência</h2>
+    <p>
+      Os povos indígenas representam a essência do Brasil. Sua relação com a terra é de respeito e equilíbrio, 
+      cuidando da floresta e dos rios como parte de si mesmos. 
+      No entanto, ao longo da história, enfrentaram injustiças, violência e tentativas de apagamento cultural. 
+      Ainda hoje, lutam pela preservação de seus territórios e pelo reconhecimento de seus direitos.
+    </p>
+  </div>
+
+  <!-- Tabela -->
+  <div class="content" id="tabela">
+    <h2>Dados sobre Povos Indígenas</h2>
+    <table>
+      <tr>
+        <th>Povo</th>
+        <th>Região</th>
+        <th>População estimada</th>
+      </tr>
+      <tr>
+        <td>Guarani</td>
+        <td>Centro-Sul</td>
+        <td>85.000</td>
+      </tr>
+      <tr>
+        <td>Yanomami</td>
+        <td>Roraima e Amazonas</td>
+        <td>27.000</td>
+      </tr>
+      <tr>
+        <td>Tikuna</td>
+        <td>Amazonas</td>
+        <td>46.000</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Galeria -->
+  <div class="content" id="galeria">
+    <h2>Imagens</h2>
+    <div class="gallery">
+      <img src="indigenas-florestas-1024x750.jpeg" alt="Floresta">
+      <img src="indios_brasileiros_ricardo_stuckert1-1024x683.jpg" alt="Rio">
+      <img src="OIP.jfif" alt="Cultura indígena">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contato">
+    <p>&copy; 2025 - Povos Indígenas do Brasil</p>
+    <p>Contato: defensoriaindigena@exemplo.com</p>
+  </footer>
+
+</body>
+</html>
